@@ -308,7 +308,7 @@ void redrawWindow(windowss www)
             for (n = 0; n < maxwins; n++)
             {
                 zorder[n] = n;
-                windowsss[n] = createWindow(n * 20 + 8, n * 20 + 8, 200, 200, colors((byte)parts(0xff, n), (byte)parts(0xff, n), (byte)parts(0xff, n)));
+                windowsss[n] = createWindow(n * 30 + 8, n * 30 + 8, 500, 400, colors((byte)parts(0xff, n), (byte)parts(0xff, n), (byte)parts(0xff, n)));
             }
                 drawWindows(windowsss);
 
@@ -323,7 +323,7 @@ void redrawWindow(windowss www)
                     if (n > -1)
 
                     {
-                        Console.Beep();
+                        //Console.Beep();
                         nn = findWin(n);
                         moveToTop(nn);
                         drawWindows(windowsss);
